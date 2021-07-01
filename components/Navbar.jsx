@@ -15,12 +15,12 @@ const Navbar = () => {
         <title>USA English Tutor</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <nav className='flex items-center flex-wrap bg-gray-600 p-3 w-screen'>
+      <nav className='flex items-center flex-wrap bg-black p-3 w-screen'>
         <Link href='/'>
           <a className='inline-flex items-center p-2 mr-4 '>
             <svg
               xmlns='http://www.w3.org/2000/svg'
-              className='h-10 w-10 mr-3 text-white'
+              className='h-10 w-10 mx-3 text-white'
               fill='none'
               viewBox='0 0 24 24'
               stroke='currentColor'
@@ -35,7 +35,9 @@ const Navbar = () => {
               />
             </svg>
             <span className='md:text-xl text-white font-bold uppercase tracking-wide'>
-              USA English Tutor
+              <span className='text-red-600 hover:text-blue-500'>USA</span>{' '}
+              <span className='text-white  '>English</span>{' '}
+              <span className='text-blue-500 hover:text-red-500 '>Tutor</span>
             </span>
           </a>
         </Link>
@@ -66,29 +68,34 @@ const Navbar = () => {
         >
           <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
             <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white '>
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-red-600 hover:text-white '>
                 Home
               </a>
             </Link>
-            <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
+            <Link href='/services'>
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-white hover:text-black'>
                 Services
               </a>
             </Link>
-            <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
+            <Link href='/about'>
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-blue-600 hover:text-white'>
                 About us
               </a>
             </Link>
 
             <Link href='/lessons'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-red-600 hover:text-white'>
                 Lessons
               </a>
             </Link>
-            <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
+            <Link href='/contact'>
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-white hover:text-black'>
                 Contact us
+              </a>
+            </Link>
+            <Link href='/tutors'>
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-blue-600 hover:text-white'>
+                Tutors
               </a>
             </Link>
           </div>

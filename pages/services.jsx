@@ -1,12 +1,12 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-const About = () => {
+const Services = () => {
   return (
     <div className='flex flex-col items-center justify-center min-h-screen'>
       <Navbar />
-      <main className='min-h-screen'>About Page</main>
+      <main className='min-h-screen'>Services Page</main>
       <Footer />
     </div>
   );
 };
-export default About;
+export default Services;

@@ -1,11 +1,12 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-export default function Home() {
+const Home = () => {
   return (
     <div className='flex flex-col items-center justify-center min-h-screen'>
       <Navbar />
-      <main className='min-h-screen'></main>
+      <main className='min-h-screen'>Home Page</main>
       <Footer />
     </div>
   );
-}
+};
+export default Home;
