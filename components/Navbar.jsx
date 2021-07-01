@@ -34,13 +34,13 @@ const Navbar = () => {
                 d='M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222'
               />
             </svg>
-            <span className='text-xl text-white font-bold uppercase tracking-wide'>
+            <span className='md:text-xl text-white font-bold uppercase tracking-wide'>
               USA English Tutor
             </span>
           </a>
         </Link>
         <button
-          className=' inline-flex p-3 hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
+          className=' inline-flex p-3 hover:bg-gray-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
           onClick={handleClick}
         >
           <svg
@@ -81,9 +81,9 @@ const Navbar = () => {
               </a>
             </Link>
 
-            <Link href='/'>
+            <Link href='/lessons'>
               <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                Online Lessons
+                Lessons
               </a>
             </Link>
             <Link href='/'>
