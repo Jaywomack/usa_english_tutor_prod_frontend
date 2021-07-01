@@ -15,7 +15,7 @@ const Navbar = () => {
         <title>USA English Tutor</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <nav className='flex items-center flex-wrap bg-green-400 p-3 w-screen'>
+      <nav className='flex items-center flex-wrap bg-gray-600 p-3 w-screen'>
         <Link href='/'>
           <a className='inline-flex items-center p-2 mr-4 '>
             <svg
