@@ -114,6 +114,20 @@ const Home = () => {
         </section>
 
         {/* End cards section */}
+        {/* Start mission section */}
+        <section className="mission text-center">
+          <p className="text-white lg:text-5xl px-12 py-20  italic leading-loose text-red-600 ">
+            We want to build a better you through English education.
+          </p>
+          <p className="text-white lg:text-5xl px-12 py-20   italic leading-loose ">
+            We want to build a better world by helping you be the best you can
+            be.
+          </p>
+          <p className="text-white lg:text-5xl px-12 py-20   italic leading-loose text-blue-500 ">
+            Then together we can build a better world by helping others.
+          </p>
+        </section>
+        {/* End Mission section */}
       </main>
       <Footer />
     </div>

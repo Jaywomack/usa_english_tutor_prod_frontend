@@ -11,7 +11,7 @@ config.autoAddCss = false;
 library.add(faYoutube, faInstagram, faFacebook, faTwitter);
 const SocialIcons = () => {
   return (
-    <ul className="social-icons flex items-baseline justify-center py-2 bg-black text-white h-20">
+    <ul className="social-icons flex items-baseline justify-center bg-black text-white  ">
       <li>
         <a
           className="text-white"

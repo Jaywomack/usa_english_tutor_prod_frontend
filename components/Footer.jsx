@@ -23,10 +23,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <SocialIcons />
-
+        <div className="py-6">
+          <SocialIcons />
+        </div>
         <div className="flex flex-col items-center justify-center pt-6 md:flex-row">
-          <div className="py-6">
+          <div className="pb-6">
             <a href="#" className=" text-xl font-bold">
               &copy;USA English Tutor 2021
             </a>
