@@ -15,6 +15,7 @@ const Navbar = () => {
       <Head>
         <title>USA English Tutor</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="" />
       </Head>
       <nav className="flex items-center flex-wrap bg-black p-3 w-screen">
         <Link href="/">

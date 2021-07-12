@@ -4,7 +4,6 @@ import Link from "next/link";
 const About = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
-      <Navbar />
       <main className="min-h-screen mb-24">
         <h1 className="text-7xl text-center mt-12 mb-24  border-b-2 pb-10">
           About
@@ -23,13 +22,13 @@ const About = () => {
               </h3>
               <p className="text-gray-600 text-2xl mb-12">
                 Jay and Whitney are professionals with a passion for Teaching
-                English. Jay is a software engineer and Whitney is an American
-                Grade School teacher. They both share a dream of bringing
+                English. Jay is a Software Engineer and Whitney is an American
+                Grade School Teacher. They both share a dream of bringing
                 accessible and affordable english lessons to the world.
               </p>
               <p className="text-gray-600 text-2xl mb-12">
                 The Long term vision of USA English Tutor will be to bring
-                American English to the entire world with accessability to
+                American English to the entire world with accessability for
                 everyone. Starting with free tiers at all levels and moving
                 towards a paid service for those that really want to take their
                 learning to the next level.
@@ -50,7 +49,6 @@ const About = () => {
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 };

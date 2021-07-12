@@ -14,14 +14,14 @@ const SocialIcons = () => {
     <ul className="social-icons flex items-baseline justify-center bg-black text-white  ">
       <li>
         <a
-          className="text-white"
+          className="text-white "
           href="https://facebook.com"
           rel="noopener"
           target="_blank"
         >
           <FontAwesomeIcon
             icon={["fab", "facebook"]}
-            className=" mr-3 h-10 w-10 text-white"
+            className=" mr-3 h-10 w-10 text-white hover:scale-125 "
           />
         </a>
       </li>
@@ -34,7 +34,7 @@ const SocialIcons = () => {
         >
           <FontAwesomeIcon
             icon={["fab", "twitter"]}
-            className=" mr-3 h-10 w-10 text-white"
+            className=" mr-3 h-10 w-10 text-white hover:scale-125"
           />
         </a>
       </li>
@@ -42,7 +42,7 @@ const SocialIcons = () => {
         <a href="https://youtube.com" rel="noopener" target="_blank">
           <FontAwesomeIcon
             icon={["fab", "youtube"]}
-            className=" mr-3 h-10 w-10 text-white"
+            className=" mr-3 h-10 w-10 text-white hover:scale-125"
           />
         </a>
       </li>
@@ -50,7 +50,7 @@ const SocialIcons = () => {
         <a href="https://instagram.com" rel="noopener" target="_blank">
           <FontAwesomeIcon
             icon={["fab", "instagram"]}
-            className=" mr-3 h-10 w-10 text-white"
+            className=" mr-3 h-10 w-10 text-white hover:scale-125"
           />
         </a>
       </li>

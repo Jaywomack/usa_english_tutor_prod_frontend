@@ -3,7 +3,6 @@ import Footer from "../components/Footer";
 const Contact = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
-      <Navbar />
       <main className="min-h-screen mb-24">
         <h1 className="text-7xl text-center my-16">Contact Us</h1>
         <form class="w-full max-w-lg px-6">
@@ -89,7 +88,6 @@ const Contact = () => {
           </div>
         </form>
       </main>
-      <Footer />
     </div>
   );
 };

@@ -1,80 +1,66 @@
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
+const matter = require("gray-matter");
+import marked from "marked";
 
 export const getStaticPaths = async () => {
-  const res = await fetch('http://localhost:1337/lessons');
+  const res = await fetch("http://localhost:1337/lessons");
   const data = await res.json();
   const paths = data.map((lesson) => {
     return {
-      params: { id: lesson.id.toString() }
+      params: { id: lesson.id.toString() },
     };
   });
   return {
     paths: paths,
-    fallback: false
+    fallback: false,
   };
 };
 
 export const getStaticProps = async (context) => {
   const id = context.params.id;
-  const res = await fetch('http://localhost:1337/lessons/' + id);
+  const res = await fetch("http://localhost:1337/lessons/" + id);
   const data = await res.json();
 
+  const { data: frontmatter, content } = matter(data.lessonContent);
+
   return {
-    props: { lesson: data }
+    props: {
+      frontmatter,
+      content,
+    },
   };
 };
 
-const Lesson = ({ lesson }) => {
+export default function Lesson({ frontmatter, content }) {
   return (
-    <div className='flex flex-col items-center justify-center min-h-screen'>
-      <Navbar />
-      <main className='min-h-screen'>
-        <div className='post px-10 '>
-          <div className='content-area relative'>
-            <div className='relative overflow-hidden pb-2/3 rounded my-24'>
+    <div className="flex  w-full justify-center min-h-screen">
+      <main className="min-h-screen w-full">
+        <div className="post px-10  ">
+          <div className="w-full ">
+            <div className="relative overflow-hidden pb-2/3 rounded my-24">
               <img
-                src={lesson.imageURL}
-                alt=''
-                className='absolute h-full w-full object-cover'
+                src={frontmatter.imageURL}
+                alt=""
+                className="absolute h-full w-full object-cover"
               />
             </div>
-            <h1 className='text-5xl my-12'>{lesson.title}</h1>
-            <p className='by-line font-semibold mb-5 text-2xl'>
-              Author: {lesson.author}
+            <h1 className="text-5xl my-12">{frontmatter.title}</h1>
+            <p className="by-line font-semibold mb-5 text-2xl">
+              Author: {frontmatter.author}
             </p>
-            <p className=' my-12 text-gray-700 leading-loose whitespace-pre-line'>
-              {lesson.intro}
-            </p>
-            <h2 className='text-4xl my-12'>{lesson.beginningHeadline}</h2>
-            <p className='whitespace-pre-line my-12 text-gray-700 leading-loose'>
-              {lesson.beginning}
-            </p>
-
-            <h3 className='text-4xl my-12'>{lesson.middleHeadline}</h3>
-            <p className='whitespace-pre-line my-12 text-gray-700 leading-loose'>
-              {lesson.middle}
-            </p>
-            <h4 className='text-4xl my-12'>{lesson.endHeadline}</h4>
-            <p className='whitespace-pre-line my-12 text-gray-700 leading-loose'>
-              {lesson.end}
-            </p>
+            <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
           </div>
 
-          <div className='aspect-w-16 aspect-h-9 mb-24'>
+          <div className="aspect-w-16 aspect-h-9 mb-24">
             <iframe
-              className='rounded '
-              src={`https://www.youtube.com/embed/${lesson.embedID}`}
-              frameBorder='0'
-              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+              className="rounded "
+              src={`https://www.youtube.com/embed/${frontmatter.embedID}`}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
-};
-
-export default Lesson;
+}

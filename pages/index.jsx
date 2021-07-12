@@ -8,7 +8,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Home = () => {
   return (
     <div className="flex bg-black flex-col items-center justify-center min-h-screen w-full">
-      <Navbar />
       <main className="min-h-screen w-full">
         {/* start header */}
         <header className=" w-full  h-full">
@@ -60,7 +59,7 @@ const Home = () => {
             </div>
             <div className="flex flex-wrap -m-4">
               <div className="xl:w-1/3 md:w-1/2 p-4">
-                <div className="border border-blue-500 p-6 rounded-lg flex-col ">
+                <div className="border border-blue-500 p-6 rounded-lg hover:scale-95 ">
                   <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-black text-blue-500 mb-4 justify-self-center ">
                     <FontAwesomeIcon
                       className=" fill-current h-10 w-10 "
@@ -77,7 +76,7 @@ const Home = () => {
               </div>
 
               <div className="xl:w-1/3 md:w-1/2 p-4">
-                <div className="border border-blue-500 p-6 rounded-lg">
+                <div className="border border-blue-500 p-6 rounded-lg hover:scale-95">
                   <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-black text-blue-500 mb-4 italic">
                     <FontAwesomeIcon
                       className=" fill-current h-10 w-10   "
@@ -93,8 +92,8 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="xl:w-1/3 md:w-1/2 p-4">
-                <div className="border border-blue-500 p-6 rounded-lg">
+              <div className="xl:w-1/3 md:w-1/2 p-4 ">
+                <div className="border border-blue-500 p-6 rounded-lg hover:scale-95">
                   <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-black text-blue-500 mb-4">
                     <FontAwesomeIcon
                       className=" fill-current h-10 w-10   "
@@ -129,7 +128,6 @@ const Home = () => {
         </section>
         {/* End Mission section */}
       </main>
-      <Footer />
     </div>
   );
 };
