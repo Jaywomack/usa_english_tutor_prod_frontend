@@ -31,36 +31,67 @@ export const getStaticProps = async (context) => {
 };
 
 export default function Lesson({ frontmatter, content }) {
-  return (
-    <div className="flex  w-full justify-center min-h-screen">
-      <main className="min-h-screen w-full">
-        <div className="post px-10  ">
-          <div className="w-full ">
-            <div className="relative overflow-hidden pb-2/3 rounded my-24">
-              <img
-                src={frontmatter.imageURL}
-                alt=""
-                className="absolute h-full w-full object-cover"
-              />
+  if (frontmatter.embedID) {
+    return (
+      <div className="flex  w-full justify-center min-h-screen">
+        <main className="min-h-screen w-full">
+          <div className="post px-10  ">
+            <div className="w-full ">
+              <div className="relative overflow-hidden pb-2/3 rounded my-24">
+                <img
+                  src={frontmatter.imageURL}
+                  alt=""
+                  className="absolute h-full w-full object-cover"
+                />
+              </div>
+              <h1 className="text-5xl my-12">{frontmatter.title}</h1>
+              <p className="by-line font-semibold text-2xl">
+                Author: {frontmatter.author}
+              </p>
+              <div
+                dangerouslySetInnerHTML={{ __html: marked(content) }}
+                className="prose prose-lg max-w-none"
+              ></div>
             </div>
-            <h1 className="text-5xl my-12">{frontmatter.title}</h1>
-            <p className="by-line font-semibold mb-5 text-2xl">
-              Author: {frontmatter.author}
-            </p>
-            <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
-          </div>
 
-          <div className="aspect-w-16 aspect-h-9 mb-24">
-            <iframe
-              className="rounded "
-              src={`https://www.youtube.com/embed/${frontmatter.embedID}`}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+            <div className="aspect-w-16 aspect-h-9 my-24">
+              <iframe
+                className="rounded "
+                src={`https://www.youtube.com/embed/${frontmatter.embedID}`}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
-        </div>
-      </main>
-    </div>
-  );
+        </main>
+      </div>
+    );
+  } else {
+    return (
+      <div className="flex  w-full justify-center min-h-screen">
+        <main className="min-h-screen w-full">
+          <div className="post px-10  ">
+            <div className="w-full ">
+              <div className="relative overflow-hidden pb-2/3 rounded my-24">
+                <img
+                  src={frontmatter.imageURL}
+                  alt=""
+                  className="absolute h-full w-full object-cover"
+                />
+              </div>
+              <h1 className="text-5xl my-12">{frontmatter.title}</h1>
+              <p className="by-line font-semibold text-2xl">
+                Author: {frontmatter.author}
+              </p>
+              <div
+                dangerouslySetInnerHTML={{ __html: marked(content) }}
+                className="prose prose-lg max-w-none"
+              ></div>
+            </div>
+          </div>
+        </main>
+      </div>
+    );
+  }
 }

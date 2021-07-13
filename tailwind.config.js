@@ -23,6 +23,7 @@ module.exports = {
   },
   plugins: [
     require("@tailwindcss/aspect-ratio"),
+    require(`@tailwindcss/typography`),
     plugin(function ({ addBase, theme }) {
       addBase({
         h1: { fontSize: theme("fontSize.2xl") },
