@@ -33,24 +33,22 @@ export const getStaticProps = async (context) => {
 export default function Lesson({ frontmatter, content }) {
   if (frontmatter.embedID) {
     return (
-      <div className="flex  w-full justify-center min-h-screen">
-        <main className="min-h-screen w-full">
-          <div className="post px-10  ">
+      <div className="flex w-full justify-center min-h-screen">
+        <main className="min-h-screen   w-full">
+          <div className="post px-10">
             <div className="w-full ">
-              <div className="relative overflow-hidden pb-2/3 rounded my-24">
+              <div className=" overflow-hidden pb-2/3 rounded my-24 ">
                 <img
                   src={frontmatter.imageURL}
-                  alt=""
-                  className="absolute h-full w-full object-cover"
+                  className="absolute h-full  w-full object-cover"
                 />
               </div>
-              <h1 className="text-5xl my-12">{frontmatter.title}</h1>
-              <p className="by-line font-semibold text-2xl">
-                Author: {frontmatter.author}
-              </p>
+              <div className="mb-18">
+                <h1 className="text-5xl my-12">{frontmatter.title}</h1>
+              </div>
               <div
                 dangerouslySetInnerHTML={{ __html: marked(content) }}
-                className="prose prose-lg max-w-none"
+                className="prose prose-lg max-w-none  "
               ></div>
             </div>
 
@@ -80,13 +78,14 @@ export default function Lesson({ frontmatter, content }) {
                   className="absolute h-full w-full object-cover"
                 />
               </div>
-              <h1 className="text-5xl my-12">{frontmatter.title}</h1>
               <p className="by-line font-semibold text-2xl">
                 Author: {frontmatter.author}
               </p>
+              <h1 className="text-5xl my-12">{frontmatter.title}</h1>
+
               <div
                 dangerouslySetInnerHTML={{ __html: marked(content) }}
-                className="prose prose-lg max-w-none"
+                className="prose prose-lg  xl:prose-xl max-w-none mb-36"
               ></div>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+
 const matter = require("gray-matter");
 
 const LessonsIndex = ({ lessons }) => {
@@ -11,13 +11,15 @@ const LessonsIndex = ({ lessons }) => {
           {lessons.map((lesson) => (
             <Link href={"/lessons/" + lesson.id} key={lesson.id} className="">
               <div className="rounded overflow-hidden shadow-lg cursor-pointer">
-                <Image
-                  width={500}
-                  height={500}
-                  src={lesson.frontmatter.imageURL}
-                  alt=""
-                  className="w-full h-96"
-                />
+                <div className="text-center">
+                  <img
+                    width={500}
+                    height={500}
+                    src={lesson.frontmatter.imageURL}
+                    alt=""
+                    className="w-full h-96"
+                  />
+                </div>
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">
                     {lesson.frontmatter.title}
@@ -52,7 +54,6 @@ export async function getStaticProps(context) {
 
   const lessons = data.map((lesson) => {
     const lessonContent = lesson.lessonContent;
-    console.log(lessonContent);
     // Get front matter from markdown
     const id = lesson.id;
     const { data: frontmatter } = matter(lessonContent);

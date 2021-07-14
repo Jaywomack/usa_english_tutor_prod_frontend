@@ -1,12 +1,10 @@
 ---
-title: "USA English Tutor Bringing English Education To The World"
+title: "The Oxford 3000: Why You Need to Learn the 3000 Most Important Words in the English Language"
 author: "Jay Womack"
-imageURL: "https://images.unsplash.com/photo-1532012197267-da84d127e765?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZWR1Y2F0aW9ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+imageURL: "https://images.unsplash.com/photo-1456081101716-74e616ab23d8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZGljdGlvbmFyeXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1"
 excerpt: "We are an English education company with a passion for bringing English education to the world"
 level: "A1"
 contentType: "Reading"
 simpleLevel: "Beginner"
 embedID: "P9yQnwpVcsQ"
 ---
-
-Content
