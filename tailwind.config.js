@@ -6,6 +6,13 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      colors: {
+        "custom-space-cadet": "#243c5a",
+        "custom-up-maroon": "#7c0516",
+        "custom-eerie-black": "#1e1e1e",
+        "custom-crimson-ua": "#a51c30",
+        "custom-cultured": "#f8f8f8",
+      },
       spacing: {
         "2/3": "66.666667%",
       },

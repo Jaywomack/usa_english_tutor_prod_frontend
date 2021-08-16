@@ -17,7 +17,7 @@ const Navbar = () => {
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="" />
       </Head>
-      <nav className="flex items-center flex-wrap bg-black p-3 w-screen">
+      <nav className="flex items-center flex-wrap bg-custom-space-cadet p-3 w-full">
         <Link href="/">
           <a className="inline-flex items-center p-2 mr-4 ">
             <svg
@@ -37,9 +37,9 @@ const Navbar = () => {
               />
             </svg>
             <span className="md:text-xl text-white font-bold uppercase tracking-wide">
-              <span className="text-red-600 hover:text-blue-500">USA</span>{" "}
-              <span className="text-white  ">English</span>{" "}
-              <span className="text-blue-500 hover:text-red-500 ">Tutor</span>
+              <span className="text-red-600">USA</span>{" "}
+              <span className="text-white ">English</span>{" "}
+              <span className="text-blue-500">Tutor</span>
             </span>
           </a>
         </Link>
