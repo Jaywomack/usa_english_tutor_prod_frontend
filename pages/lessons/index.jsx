@@ -3,7 +3,6 @@ import Link from "next/link";
 const matter = require("gray-matter");
 
 const LessonsIndex = ({ lessons }) => {
-  console.log(lessons);
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       <main className="min-h-screen">

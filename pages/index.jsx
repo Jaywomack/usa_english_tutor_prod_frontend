@@ -1,4 +1,6 @@
 import Link from "next/link";
+import FeaturedButtons from "../components/FeaturedButtons";
+import SubjectAreas from "../components/SubjectAreas";
 const matter = require("gray-matter");
 
 const Home = ({ lessons }) => {
@@ -91,56 +93,83 @@ const Home = ({ lessons }) => {
 
         {/* End featured lessons section */}
         {/* Start Subject Areas section */}
-        <section className="text-gray-600 body-font">
+        <section className="text-gray-600 body-font bg-white">
           <div className="container px-5 py-24 mx-auto">
-            <div className="flex flex-col text-center w-full mb-20">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-                Our Team
+            <div className="inline-flex justify-between text-center w-full mb-20">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium title-font text-black text-left lg:text md:pl-32 lg:pl-48">
+                Subject Areas
               </h1>
-              <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-                gentrify, subway tile poke farm-to-table. Franzen you probably
-                haven't heard of them.
-              </p>
+              <button className="bg-custom-crimson-ua px-5 text-white rounded">
+                VIEW ALL COURSES
+              </button>
             </div>
-            {/* start subjects container */}
-            <div className="flex flex-wrap -m-2">
-              {lessons.tags.map((tag) => (
-                <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-                  <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                    <div className="flex-grow">
-                      <p className="text-gray-500">{tag}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-              <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-                <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                  <div className="flex-grow">
-                    <p className="text-gray-500">UI Designer</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/*end subjects container */}
+            <SubjectAreas />
           </div>
         </section>
         {/* End Subject Areas  section */}
-
-        {/* Start mission section */}
-        <section className="mission text-center bg-custom-space-cadet">
-          <p className="text-white lg:text-5xl px-12 py-10  italic leading-loose text-red-600 ">
-            We want to build a better you through English education.
-          </p>
-          <p className="text-white filter drop-shadow-lg lg:text-5xl px-12 py-10   italic leading-loose ">
-            We want to build a better world by helping you be the best you can
-            be.
-          </p>
-          <p className="text-white lg:text-5xl px-12 py-10   italic leading-loose text-blue-500 ">
-            Then together we can build a better world by helping others.
-          </p>
+        {/* Start Trending Courses Sections */}
+        <section className="text-gray-600 body-font bg-custom-cultured">
+          <div className="container px-5 py-24 mx-auto">
+            <div className="flex flex-col">
+              <div className="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+                <h1 className="sm:w-2/5 text-gray-900 font-medium title-font text-2xl md:text-5xl mb-2 sm:mb-0">
+                  Trending Courses
+                </h1>
+              </div>
+            </div>
+            <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 cursor-pointer">
+              {lessons
+                .slice(0)
+                .reverse()
+                .map((lesson) => (
+                  <Link
+                    href={"/lessons/" + lesson.id}
+                    key={lesson.id}
+                    className=""
+                  >
+                    <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
+                      <div className="rounded-lg h-64 overflow-hidden">
+                        <img
+                          alt="content"
+                          className="object-cover object-center h-full w-full"
+                          src={lesson.frontmatter.imageURL}
+                        />
+                      </div>
+                      <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
+                        {lesson.frontmatter.title}
+                      </h2>
+                      <p className="text-base leading-relaxed mt-2">
+                        {lesson.frontmatter.excerpt}
+                      </p>
+                      <a className="text-indigo-500 inline-flex items-center mt-3">
+                        Read More
+                        <svg
+                          fill="none"
+                          stroke="currentColor"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          className="w-4 h-4 ml-2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </Link>
+                ))}
+            </div>
+          </div>
         </section>
-        {/* End Mission section */}
+        {/* End Trending Courses Sections */}
+        {/* Start Featured Topics Sections */}
+        <section className="h-60">
+          <h1 className="pl-36 my-12 sm:w-2/5 text-gray-900 font-medium title-font text-2xl md:text-5xl ">
+            Featured Topics
+          </h1>{" "}
+          <FeaturedButtons />
+        </section>
+        {/* End Featured Topics Sections */}
       </main>
     </div>
   );
@@ -159,7 +188,6 @@ export async function getStaticProps(context) {
     return {
       frontmatter,
       id,
-      tags,
     };
   });
 
