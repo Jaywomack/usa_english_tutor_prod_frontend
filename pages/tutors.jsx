@@ -21,10 +21,10 @@ const Tutors = () => {
             </p>
             <div className="flex justify-center">
               <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                Button
+                Isis Avry
               </button>
               <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-                Button
+                Whitney
               </button>
             </div>
           </div>
@@ -59,7 +59,7 @@ const Tutors = () => {
                     <img
                       alt="content"
                       className="object-cover object-center h-full w-full"
-                      src="/static/images/pretty_brunette.png"
+                      src="/static/images/whit_profile.png"
                     />
                   </div>
                   <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">

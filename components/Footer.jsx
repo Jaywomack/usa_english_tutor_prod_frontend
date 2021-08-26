@@ -2,7 +2,7 @@ import SocialIcons from "./SocialIcons";
 
 const Footer = () => {
   return (
-    <footer className="text-white body-font bg-gray-900">
+    <footer className="text-white body-font bg-custom-eerie-black">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
           <div className="lg:w-1/6 md:w-1/2 w-full px-4">
@@ -129,7 +129,7 @@ const Footer = () => {
                 htmlFor="footer-field"
                 className="leading-7 text-sm text-white"
               >
-                Placeholder
+                Subscibe To Our Newsletter
               </label>
               <input
                 type="text"
@@ -139,11 +139,8 @@ const Footer = () => {
               />
             </div>
             <button className="inline-flex text-white bg-red-600 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
-              Button
+              Subscribe
             </button>
-            <p className="text-white text-sm md:ml-6 md:mt-0 mt-2 sm:text-left text-center">
-              Bitters chicharrones fanny pack
-            </p>
           </div>
           <span className="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
             <a className="text-white">
@@ -207,18 +204,11 @@ const Footer = () => {
       <div>
         <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
           <p className="text-white text-sm text-center sm:text-left">
-            © 2020 Tailblocks —
-            <a
-              href="https://twitter.com/knyttneve"
-              className="text-white ml-1"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              @knyttneve
-            </a>
+            © 2020 USA English Tutor
           </p>
           <span className="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-white text-sm">
-            Enamel pin tousled raclette tacos irony
+            All of our orginal work and logos are trademarked and we reserve the
+            right to all licensing of our products
           </span>
         </div>
       </div>

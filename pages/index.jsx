@@ -296,19 +296,15 @@ const Home = ({ lessons }) => {
           >
             <div className="flex justify-center p-8 items-center pt-20 w-full">
               <h2 className="text-white text-2xl lg:text-7xl   text-center">
-                Keep Learning
+                Keep Learning.
               </h2>
             </div>
 
             <div className="text-center flex flex-wrap justify-center text-white  pb-16">
               <div className="text-center flex flex-col align-center">
-                <h1 className="font-sans sm:px-6  lg:text-4xl mb-4 drop-shadow-2xl">
-                  We are here to teach you English and build a better you.
-                </h1>
-
                 <Link href="/lessons">
-                  <button className="w-full md:w-1/2 m-1 p-2 text-sm bg-custom-crimson-ua rounded-lg font-semibold uppercase lg:w-auto self-center px-10">
-                    <span className="font-bold">LESSONS</span>
+                  <button className="w-full md:w-1/2 mt-5 text-sm rounded font-semibold uppercase lg:w-auto self-center px-10 py-4 hover:bg-custom-crimson-ua hover:text-custom-cultured bg-custom-cultured text-custom-crimson-ua">
+                    <span className="font-bold text-xl">VIEW ALL LESSONS</span>
                   </button>
                 </Link>
               </div>
