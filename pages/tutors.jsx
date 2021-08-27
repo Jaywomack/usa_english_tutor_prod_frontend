@@ -10,14 +10,14 @@ const Tutors = () => {
           />
           <div className="text-center lg:w-2/3 w-full">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-              Microdosing synth tattooed vexillologist
+              USA English Tutor Has Professional Tutors
             </h1>
             <p className="mb-8 leading-relaxed">
-              Meggings kinfolk echo park stumptown DIY, kale chips beard
-              jianbing tousled. Chambray dreamcatcher trust fund, kitsch vice
-              godard disrupt ramps hexagon mustache umami snackwave tilde
-              chillwave ugh. Pour-over meditation PBR&B pickled ennui celiac
-              mlkshk freegan photo booth af fingerstache pitchfork.
+              Whitney and Isis are key contributors to USA English Tutor and
+              were instrumental in its founding and implementing its mission.
+              That mission is to bring free and low cost English language
+              learning and educational materials to the world. With a
+              concentration on bringing it to the poorest and most in need.
             </p>
             <div className="flex justify-center">
               <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
