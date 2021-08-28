@@ -50,10 +50,10 @@ const LessonsIndex = ({ lessons }) => {
 
 export async function getStaticProps(context) {
   const res = await fetch(
-    "https://usa-english-tutor-prod-glbns.ondigitalocean.app/lessons/"
+    "https://usa-english-tutor-prod-glbns.ondigitalocean.app/lessons"
   );
   const data = await res.json();
-
+  console.log(data);
   const lessons = data.map((lesson) => {
     const lessonContent = lesson.lessonContent;
     // Get front matter from markdown
