@@ -7,6 +7,7 @@ export const getStaticPaths = async () => {
     "https://usa-english-tutor-prod-glbns.ondigitalocean.app/lessons"
   );
   const data = await res.json();
+
   const paths = data.map((lesson) => {
     return {
       params: { id: lesson.id.toString() },
