@@ -3,7 +3,9 @@ import marked from "marked";
 import { useState } from "react";
 
 export const getStaticPaths = async () => {
-  const res = await fetch("http://localhost:1337/lessons");
+  const res = await fetch(
+    "https://usa-english-tutor-prod-glbns.ondigitalocean.app/lessons"
+  );
   const data = await res.json();
   const paths = data.map((lesson) => {
     return {
@@ -18,7 +20,9 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
   const id = context.params.id;
-  const res = await fetch("http://localhost:1337/lessons/" + id);
+  const res = await fetch(
+    "https://usa-english-tutor-prod-glbns.ondigitalocean.app/lessons/" + id
+  );
   const data = await res.json();
 
   const { data: frontmatter, content } = matter(data.lessonContent);

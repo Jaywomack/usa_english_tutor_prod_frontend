@@ -49,7 +49,9 @@ const LessonsIndex = ({ lessons }) => {
 };
 
 export async function getStaticProps(context) {
-  const res = await fetch("http://localhost:1337/lessons/");
+  const res = await fetch(
+    "https://usa-english-tutor-prod-glbns.ondigitalocean.app/lessons/"
+  );
   const data = await res.json();
 
   const lessons = data.map((lesson) => {
