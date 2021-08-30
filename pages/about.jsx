@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 const About = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen pb-24">
@@ -11,11 +12,16 @@ const About = () => {
         </h3>
         <div className="flex flex-wrap overflow-hidden items-center">
           <div className="w-full overflow-hidden lg:w-1/2 flex justify-end rounded ">
-            <img src="/static/images/isis_whit_732X600.png" alt="" />
+            <Image
+              width={732}
+              height={600}
+              src="/static/images/isis_whit_732X600.png"
+              alt=""
+            />
           </div>
           <div className="w-full overflow-hidden lg:w-1/2 text-start">
             <div className="md:w-1/2 md:ml-12">
-              <h4 className="text-gray-900 text-3xl mb-2">
+              <h4 className="text-gray-900 text-3xl mb-2 lg:mb-5">
                 We are a family of educators
               </h4>
               <p className="text-gray-600 text-2xl mb-2">
@@ -36,6 +42,11 @@ const About = () => {
                 towards a paid service for those that really want to take their
                 learning to the next level.
               </p>
+              <Link href="/tutors">
+                <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg ">
+                  Tutoring Services
+                </button>
+              </Link>
             </div>
           </div>
         </div>
