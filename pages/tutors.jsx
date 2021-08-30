@@ -1,9 +1,13 @@
+import Image from "next/image";
+
 const Tutors = () => {
   return (
     <>
       <section className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-          <img
+          <Image
+            width={500}
+            height={410}
             className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
             alt="hero"
             src="/static/images/isis_whit_732X600.png"
@@ -20,12 +24,16 @@ const Tutors = () => {
               concentration on bringing it to the poorest and most in need.
             </p>
             <div className="flex justify-center">
-              <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                Isis Avry
-              </button>
-              <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-                Whitney
-              </button>
+              <a href="/Isis'Website" rel="noopener noreferrer">
+                <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                  Isis Avry
+                </button>
+              </a>
+              <a href="/whitney's website" rel="noopener noreferrer">
+                <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+                  Whitney
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -37,7 +45,9 @@ const Tutors = () => {
               <div className="flex flex-wrap -mx-4 -mb-10 text-center">
                 <div className="sm:w-1/2 mb-10 px-4">
                   <div className="rounded-lg h-64 overflow-hidden">
-                    <img
+                    <Image
+                      width={732}
+                      height={256}
                       alt="content"
                       className="object-cover object-center h-full w-full"
                       src="/static/images/isis_profile.png"
@@ -56,7 +66,9 @@ const Tutors = () => {
                 </div>
                 <div className="sm:w-1/2 mb-10 px-4">
                   <div className="rounded-lg h-64 overflow-hidden">
-                    <img
+                    <Image
+                      width={732}
+                      height={256}
                       alt="content"
                       className="object-cover object-center h-full w-full"
                       src="/static/images/whit_profile.png"
