@@ -74,14 +74,14 @@ const Navbar = () => {
                 Home
               </a>
             </Link>
-            {/* <Link href="/services">
+            <Link href="/services">
               <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-white hover:text-black">
                 Services
               </a>
-            </Link> */}
+            </Link>
             <Link href="/about">
               <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-blue-600 hover:text-white">
-                About us
+                About Us
               </a>
             </Link>
 
@@ -92,7 +92,7 @@ const Navbar = () => {
             </Link>
             <Link href="/contact">
               <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-white hover:text-black">
-                Contact us
+                Contact Us
               </a>
             </Link>
             <Link href="/tutors">
