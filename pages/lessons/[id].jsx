@@ -1,6 +1,7 @@
 const matter = require("gray-matter");
 import marked from "marked";
 import { useState } from "react";
+import Image from "next/image";
 
 export const getStaticPaths = async () => {
   const res = await fetch(
@@ -47,7 +48,9 @@ export default function Lesson({ frontmatter, content }) {
                 {frontmatter.title}
               </h1>
 
-              <img
+              <Image
+                width={1691}
+                height={1137}
                 src={frontmatter.imageURL}
                 alt=""
                 className="absolute min-h-0 w-full object-cover"

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const matter = require("gray-matter");
 
@@ -12,9 +13,9 @@ const LessonsIndex = ({ lessons }) => {
             <Link href={"/lessons/" + lesson.id} key={lesson.id} className="">
               <div className="rounded overflow-hidden shadow-lg cursor-pointer">
                 <div className="text-center">
-                  <img
-                    width={500}
-                    height={500}
+                  <Image
+                    width={478}
+                    height={256}
                     src={lesson.frontmatter.imageURL}
                     alt=""
                     className="w-full h-96"
