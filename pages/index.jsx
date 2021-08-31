@@ -11,8 +11,8 @@ const Home = ({ lessons }) => {
   return (
     <>
       <Meta
-        title="Home | Web development company specializing in Shopify E-commerce and marketing and advertising for small and medium size businesses."
-        desc="Nerd Brainz is a web development company employing developers and designers that specialize in helping small and medium size businesses. Nerd Brainz specializes in helping small to medium size businesses improve their marketing and advertising by giving them access to the global economy. Nerd Brainz are e-commerce specialists and have a knack for social media management, marketing and advertising. Nerd Brainz can handle all things to do with building your website, maintaining it and  bringing your products to the web with a brilliant marketing and advertising strategy. We build with Wordpress, magento, shopify, react, and nextjs and are able to help with all your web development needs."
+        title="Home | English tutoring company specializing in bringing free and affordable English tutoring and English lessons with an American accent to the world."
+        desc="USA English Tutor offers English lessons online and is a creator of English learning materials. We create video lessons on youtube, we create written lessons our website and we can help ESL learners speak, read, write and listen to English better. We have beginner, intermediate and expert level courses to help improve your English and ESL learning. We offer IELTS, MCAT, UKCAT and English tutoring all with an American accent."
       />
       <div className="flex bg-white flex-col items-center justify-center min-h-screen w-full">
         <main className="min-h-screen w-full">

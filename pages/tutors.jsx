@@ -1,8 +1,12 @@
 import Image from "next/image";
-
+import Meta from "../components/partials/Meta";
 const Tutors = () => {
   return (
     <>
+      <Meta
+        title="Tutors | English Tutors with an american accent. USA English currently offers English tutoring as well as tutoring for MCAT,UCAT, and IELTS. Our English Tutors are highly skilled American teachers and subject matter experts in American English"
+        desc="Our tutors all have American accents and can help students with English lessons that will help them speak, read, write and listen to English better, and with an American accent. In addition to normal English tutoring that spans beginner lessons to native fluency, we also offer MCAT, UKCAT, and IELTS tutoring."
+      />
       <section className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
           <Image
