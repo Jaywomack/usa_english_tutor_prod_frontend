@@ -10,18 +10,20 @@ const Footer = () => {
               CATEGORIES
             </h2>
             <nav className="list-none mb-10">
-              <li>
-                <a className="text-white hover:text-white">First Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Second Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Third Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Fourth Link</a>
-              </li>
+              <ul>
+                <li>
+                  <a className="text-white hover:text-white">First Link</a>
+                </li>
+                <li>
+                  <a className="text-white hover:text-white">Second Link</a>
+                </li>
+                <li>
+                  <a className="text-white hover:text-white">Third Link</a>
+                </li>
+                <li>
+                  <a className="text-white hover:text-white">Fourth Link</a>
+                </li>
+              </ul>
             </nav>
           </div>
           <div className="lg:w-1/6 md:w-1/2 w-full px-4">
@@ -29,18 +31,20 @@ const Footer = () => {
               CATEGORIES
             </h2>
             <nav className="list-none mb-10">
-              <li>
-                <a className="text-white hover:text-white">First Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Second Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Third Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Fourth Link</a>
-              </li>
+              <ul>
+                <li>
+                  <a className="text-white hover:text-white">First Link</a>
+                </li>
+                <li>
+                  <a className="text-white hover:text-white">Second Link</a>
+                </li>
+                <li>
+                  <a className="text-white hover:text-white">Third Link</a>
+                </li>
+                <li>
+                  <a className="text-white hover:text-white">Fourth Link</a>
+                </li>
+              </ul>
             </nav>
           </div>
           <div className="lg:w-1/6 md:w-1/2 w-full px-4">
@@ -48,18 +52,20 @@ const Footer = () => {
               CATEGORIES
             </h2>
             <nav className="list-none mb-10">
-              <li>
-                <a className="text-white hover:text-white">First Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Second Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Third Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Fourth Link</a>
-              </li>
+              <ul>
+                <li>
+                  <a className="text-white hover:text-white">First Link</a>
+                </li>
+                <li>
+                  <a className="text-white hover:text-white">Second Link</a>
+                </li>
+                <li>
+                  <a className="text-white hover:text-white">Third Link</a>
+                </li>
+                <li>
+                  <a className="text-white hover:text-white">Fourth Link</a>
+                </li>
+              </ul>
             </nav>
           </div>
           <div className="lg:w-1/6 md:w-1/2 w-full px-4">
@@ -67,18 +73,20 @@ const Footer = () => {
               CATEGORIES
             </h2>
             <nav className="list-none mb-10">
-              <li>
-                <a className="text-white hover:text-white">First Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Second Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Third Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Fourth Link</a>
-              </li>
+              <ul>
+                <li>
+                  <a className="text-white hover:text-white">First Link</a>
+                </li>
+                <li>
+                  <a className="text-white hover:text-white">Second Link</a>
+                </li>
+                <li>
+                  <a className="text-white hover:text-white">Third Link</a>
+                </li>
+                <li>
+                  <a className="text-white hover:text-white">Fourth Link</a>
+                </li>
+              </ul>
             </nav>
           </div>
           <div className="lg:w-1/6 md:w-1/2 w-full px-4">
@@ -86,18 +94,20 @@ const Footer = () => {
               CATEGORIES
             </h2>
             <nav className="list-none mb-10">
-              <li>
-                <a className="text-white hover:text-white">First Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Second Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Third Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Fourth Link</a>
-              </li>
+              <ul>
+                <li>
+                  <a className="text-white hover:text-white">First Link</a>
+                </li>
+                <li>
+                  <a className="text-white hover:text-white">Second Link</a>
+                </li>
+                <li>
+                  <a className="text-white hover:text-white">Third Link</a>
+                </li>
+                <li>
+                  <a className="text-white hover:text-white">Fourth Link</a>
+                </li>
+              </ul>
             </nav>
           </div>
           <div className="lg:w-1/6 md:w-1/2 w-full px-4">
@@ -105,18 +115,20 @@ const Footer = () => {
               CATEGORIES
             </h2>
             <nav className="list-none mb-10">
-              <li>
-                <a className="text-white hover:text-white">First Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Second Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Third Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Fourth Link</a>
-              </li>
+              <ul>
+                <li>
+                  <a className="text-white hover:text-white">First Link</a>
+                </li>
+                <li>
+                  <a className="text-white hover:text-white">Second Link</a>
+                </li>
+                <li>
+                  <a className="text-white hover:text-white">Third Link</a>
+                </li>
+                <li>
+                  <a className="text-white hover:text-white">Fourth Link</a>
+                </li>
+              </ul>
             </nav>
           </div>
         </div>

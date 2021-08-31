@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
-import Head from "next/head";
+
 import SocialIcons from "./SocialIcons";
 
 const Navbar = () => {
@@ -12,11 +12,6 @@ const Navbar = () => {
 
   return (
     <>
-      <Head>
-        <title>USA English Tutor</title>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="" />
-      </Head>
       <nav className="flex items-center flex-wrap bg-custom-space-cadet p-3 w-full">
         <Link href="/">
           <a className="inline-flex items-center p-2 mr-4 ">

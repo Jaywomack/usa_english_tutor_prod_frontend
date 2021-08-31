@@ -22,6 +22,7 @@ const Home = ({ lessons }) => {
               className="container-fluid mx-auto rounded-t shadow bg-cover bg-no-repeat bg-center bg-bottom   w-full h-screen"
               style={{
                 backgroundImage: "url(/static/images/hero_flag.jpeg)",
+                backgroundSize: "cover",
               }}
             >
               <div className="flex justify-center p-8 items-center pt-20 w-full">
