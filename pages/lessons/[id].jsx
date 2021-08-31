@@ -2,6 +2,7 @@ const matter = require("gray-matter");
 import marked from "marked";
 import { useState } from "react";
 import Image from "next/image";
+import Meta from "../../components/partials/Meta";
 
 export const getStaticPaths = async () => {
   const res = await fetch(
