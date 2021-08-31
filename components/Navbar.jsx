@@ -32,7 +32,7 @@ const Navbar = () => {
               />
             </svg>
             <span className="md:text-xl text-white font-bold uppercase tracking-wide">
-              <span className="text-red-600">USA</span>{" "}
+              <span className="text-red-500">USA</span>{" "}
               <span className="text-white ">English</span>{" "}
               <span className="text-blue-500">Tutor</span>
             </span>
