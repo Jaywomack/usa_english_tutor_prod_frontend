@@ -7,7 +7,7 @@ const Meta = (props) => (
     <meta
       name="og:title"
       property="og:title"
-      content="USA English Tutor Web development | Web Design | SEO | E-Commerce | Social Media Marketing & Optimization. Everything you need for Web Development for your small and medium size business."
+      content="USA English Tutor is an English education website that offers free lessons and videos to help ESL students and English learners accelerate their English learning. We teach English with a neutral American accent to beginner, intermediate and advanced learners. We offer paid tutoring services in addition to the free content that we produce."
     />
     <meta
       name="og:description"
@@ -18,19 +18,19 @@ const Meta = (props) => (
     <meta property="og:url" content="https://www.usaenglishtutor.com" />
     <meta
       name="twitter:card"
-      content="USA English Tutor Web development | Web Design | SEO | E-Commerce | Social Media Marketing & Optimization. Everything you need for Web Development for your small and medium size business."
+      content="USA English Tutor is an English education website that offers free lessons and videos to help ESL students and English learners accelerate their English learning. We teach English with a neutral American accent to beginner, intermediate and advanced learners. We offer paid tutoring services in addition to the free content that we produce."
     />
     <meta
       name="og:image:alt"
-      content="NerdBrainz logo for usaenglishtutor.com web development and web design company."
+      content="USA English Tutor logo for usaenglishtutor.com American English education and tutoring services."
     />
-    <meta property="og:image" content="/static/images/nb_logo.png" />
-    <meta name="twitter:title" content="NerdBrainz LLC" />
+    <meta property="og:image" content="/static/images/hero_flag.png" />
+    <meta name="twitter:title" content="USA English Tutor LLC" />
     <meta name="twitter:description" content={props.desc} />
     <meta name="twitter:site" content="" />
-    <meta name="twitter:creator" content="@nerd_brainz" />
+    <meta name="twitter:creator" content="@USA_English_tutor" />
 
-    <meta name="twitter:image" content="/static/images/nb_logo.png" />
+    <meta name="twitter:image" content="/static/images/hero_flag.png" />
     <link rel="canonical" href="https://www.usaenglishtutor.com" />
     <meta name="robots" content="index" follow="true" />
     {/* Raleway fonts.google */}
@@ -45,7 +45,7 @@ const Meta = (props) => (
     <link
       rel="apple-touch-icon"
       type="image/png"
-      href="/static/images/apple-touch-cion.png"
+      href="/static/images/apple-touch-icon.png"
     />
     <link
       rel="stylesheet"
