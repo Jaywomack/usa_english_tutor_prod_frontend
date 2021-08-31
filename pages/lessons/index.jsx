@@ -35,13 +35,13 @@ const LessonsIndex = ({ lessons }) => {
                     </p>
                   </div>
                   <div className="px-6 pt-4 pb-2">
-                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                    <span className="inline-block bg-custom-crimson-ua rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
                       {lesson.frontmatter.level}
                     </span>
-                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                    <span className="inline-block bg-custom-crimson-ua rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
                       {lesson.frontmatter.contentType}
                     </span>
-                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                    <span className="inline-block bg-custom-crimson-ua rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
                       {lesson.frontmatter.simpleLevel}
                     </span>
                   </div>

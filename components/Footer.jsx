@@ -1,132 +1,144 @@
-import SocialIcons from "./SocialIcons";
-
 const Footer = () => {
   return (
     <footer className="text-white body-font bg-custom-eerie-black">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
           <div className="lg:w-1/6 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
-              CATEGORIES
+            <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3 uppercase">
+              Beginner Subjects
             </h2>
             <nav className="list-none mb-10">
               <ul>
                 <li>
-                  <a className="text-white hover:text-white">First Link</a>
+                  <a className="text-white hover:text-white">School</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-white">Second Link</a>
+                  <a className="text-white hover:text-white">Shopping</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-white">Third Link</a>
+                  <a className="text-white hover:text-white">Cooking</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-white">Fourth Link</a>
+                  <a className="text-white hover:text-white">Pets</a>
+                </li>
+                <li>
+                  <a className="text-white hover:text-white">Travel</a>
                 </li>
               </ul>
             </nav>
           </div>
           <div className="lg:w-1/6 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
-              CATEGORIES
+            <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3 uppercase">
+              Intermediate Subjects
             </h2>
             <nav className="list-none mb-10">
               <ul>
                 <li>
-                  <a className="text-white hover:text-white">First Link</a>
+                  <a className="text-white hover:text-white">Career</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-white">Second Link</a>
+                  <a className="text-white hover:text-white">Advertising</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-white">Third Link</a>
+                  <a className="text-white hover:text-white">Hobbies</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-white">Fourth Link</a>
+                  <a className="text-white hover:text-white">Annoyances</a>
                 </li>
               </ul>
             </nav>
           </div>
           <div className="lg:w-1/6 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
-              CATEGORIES
+            <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3 uppercase">
+              Advanced Subjects
             </h2>
             <nav className="list-none mb-10">
               <ul>
                 <li>
-                  <a className="text-white hover:text-white">First Link</a>
+                  <a className="text-white hover:text-white">
+                    Vacation & Travel
+                  </a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-white">Second Link</a>
+                  <a className="text-white hover:text-white">
+                    Creative Journalism
+                  </a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-white">Third Link</a>
+                  <a className="text-white hover:text-white">
+                    Planning Holidays
+                  </a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-white">Fourth Link</a>
+                  <a className="text-white hover:text-white">Itineraries</a>
                 </li>
               </ul>
             </nav>
           </div>
           <div className="lg:w-1/6 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
-              CATEGORIES
+            <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3 uppercase">
+              Expert Subjects
             </h2>
             <nav className="list-none mb-10">
               <ul>
                 <li>
-                  <a className="text-white hover:text-white">First Link</a>
+                  <a className="text-white hover:text-white">The Environment</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-white">Second Link</a>
+                  <a className="text-white hover:text-white">Health</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-white">Third Link</a>
+                  <a className="text-white hover:text-white">Technology</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-white">Fourth Link</a>
+                  <a className="text-white hover:text-white">Crime</a>
+                </li>
+                <li>
+                  <a className="text-white hover:text-white">
+                    International Affairs
+                  </a>
                 </li>
               </ul>
             </nav>
           </div>
           <div className="lg:w-1/6 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
-              CATEGORIES
+            <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3 uppercase">
+              Medical School Prep
             </h2>
             <nav className="list-none mb-10">
               <ul>
                 <li>
-                  <a className="text-white hover:text-white">First Link</a>
+                  <a className="text-white hover:text-white">MCAT</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-white">Second Link</a>
+                  <a className="text-white hover:text-white">UKCAT</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-white">Third Link</a>
+                  <a className="text-white hover:text-white">DAT</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-white">Fourth Link</a>
+                  <a className="text-white hover:text-white">GRE</a>
                 </li>
               </ul>
             </nav>
           </div>
           <div className="lg:w-1/6 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
-              CATEGORIES
+            <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3 uppercase">
+              Language Test Prep
             </h2>
             <nav className="list-none mb-10">
               <ul>
                 <li>
-                  <a className="text-white hover:text-white">First Link</a>
+                  <a className="text-white hover:text-white">IELTS-TEST</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-white">Second Link</a>
+                  <a className="text-white hover:text-white">TOEFL-TEST</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-white">Third Link</a>
+                  <a className="text-white hover:text-white">GMAT-TEST</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-white">Fourth Link</a>
+                  <a className="text-white hover:text-white">GRE-TEST</a>
                 </li>
               </ul>
             </nav>

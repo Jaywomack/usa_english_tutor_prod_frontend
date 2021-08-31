@@ -33,7 +33,7 @@ const Services = () => {
                     English Tutor.
                   </p>
                   <Link href="/tutors">
-                    <a class="text-indigo-500 inline-flex items-center">
+                    <a class="text-custom-crimson-ua inline-flex items-center">
                       Tutors
                       <svg
                         fill="none"
@@ -59,7 +59,7 @@ const Services = () => {
                     credentials. Business English with USA English Tutor.
                   </p>
                   <Link href="/tutors">
-                    <a class="text-indigo-500 inline-flex items-center">
+                    <a class="text-custom-crimson-ua inline-flex items-center">
                       Tutors
                       <svg
                         fill="none"
@@ -85,7 +85,7 @@ const Services = () => {
                     prep with USA English Tutor
                   </p>
                   <Link href="/tutors">
-                    <a class="text-indigo-500 inline-flex items-center">
+                    <a class="text-custom-crimson-ua inline-flex items-center">
                       Tutors
                       <svg
                         fill="none"
@@ -112,7 +112,7 @@ const Services = () => {
                     array of subjects.
                   </p>
                   <Link href="/tutors">
-                    <a class="text-indigo-500 inline-flex items-center">
+                    <a class="text-custom-crimson-ua inline-flex items-center">
                       Tutors
                       <svg
                         fill="none"
@@ -130,7 +130,7 @@ const Services = () => {
                 </div>
               </div>
               <Link href="/lessons">
-                <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                <button class="flex mx-auto mt-16 text-white bg-custom-crimson-ua border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                   Free Lessons
                 </button>
               </Link>

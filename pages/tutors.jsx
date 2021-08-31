@@ -29,13 +29,13 @@ const Tutors = () => {
             </p>
             <div className="flex justify-center">
               <a href="/Isis'Website" rel="noopener noreferrer">
-                <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                  Isis Avry
+                <button className="inline-flex text-white bg-custom-crimson-ua border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">
+                  Teacher Isis
                 </button>
               </a>
               <a href="/whitney's website" rel="noopener noreferrer">
-                <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-                  Whitney
+                <button className="ml-6 inline-flex text-white bg-custom-space-cadet border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                  Teacher Whitney
                 </button>
               </a>
             </div>
@@ -61,10 +61,9 @@ const Tutors = () => {
                     Isis Avry
                   </h2>
                   <p className="leading-relaxed text-base">
-                    Likes grey labs, her brother kaleb, lifting weights and
-                    getting dates. Is probably stronger than you
+                    English Honors. IELTS, MCAT, UKCAT tutor.
                   </p>
-                  <button className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">
+                  <button className="flex mx-auto mt-6 text-white bg-custom-crimson-ua  border-0 py-2 px-5 focus:outline-none hover:bg-red-600 rounded">
                     Tutoring Services
                   </button>
                 </div>
@@ -85,7 +84,7 @@ const Tutors = () => {
                     USA Certified English Teacher. BA Education, Tefl, and 4
                     years experience tutoring.
                   </p>
-                  <button className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">
+                  <button className="flex mx-auto mt-6 text-white bg-custom-space-cadet border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">
                     Tutoring Services
                   </button>
                 </div>

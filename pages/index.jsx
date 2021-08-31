@@ -82,7 +82,7 @@ const Home = ({ lessons }) => {
                       <p className="text-base leading-relaxed mt-2">
                         {lesson.frontmatter.excerpt}
                       </p>
-                      <a className="text-indigo-500 inline-flex items-center mt-3">
+                      <a className="text-custom-crimson-ua inline-flex items-center mt-3">
                         Read More
                         <svg
                           fill="none"
@@ -155,7 +155,7 @@ const Home = ({ lessons }) => {
                         <p className="text-base leading-relaxed mt-2">
                           {lesson.frontmatter.excerpt}
                         </p>
-                        <a className="text-indigo-500 inline-flex items-center mt-3">
+                        <a className="text-custom-crimson-ua inline-flex items-center mt-3">
                           Read More
                           <svg
                             fill="none"
@@ -220,7 +220,7 @@ const Home = ({ lessons }) => {
                       <p className="text-base leading-relaxed mt-2">
                         {lesson.frontmatter.excerpt}
                       </p>
-                      <a className="text-indigo-500 inline-flex items-center mt-3">
+                      <a className="text-custom-crimson-ua inline-flex items-center mt-3">
                         Read More
                         <svg
                           fill="none"
@@ -277,7 +277,7 @@ const Home = ({ lessons }) => {
                         <p className="text-base leading-relaxed mt-2">
                           {lesson.frontmatter.excerpt}
                         </p>
-                        <a className="text-indigo-500 inline-flex items-center mt-3">
+                        <a className="text-custom-crimson-ua inline-flex items-center mt-3">
                           Read More
                           <svg
                             fill="none"
